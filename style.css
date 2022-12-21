@@ -51,6 +51,10 @@ body {
     transform: translateY(-8px);
     transition:0.5s;
 }
+.navigation.active .menuToggle::before
+{
+   transform: translateX(0) rotate(45deg)
+}
 .menuToggle::after{
     content: '';
     position: absolute;
@@ -60,4 +64,9 @@ body {
     transform: translateY(8px);
     box-shadow: 0 -8px 0 #333;
     transition:0.5s;
+}
+.navigation.active .menuToggle::after
+{
+   transform: translateX(0) rotate(-45deg);
+   box-shadow: 0 0 0 #333;
 }
