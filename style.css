@@ -11,3 +11,13 @@
 {
     --bg: #2f323f;
 }
+body {
+    min-height: 100vh;
+    background: var(--bg);
+
+}
+.navigation {
+    position: fixed;
+    inset: 40px 0 40px 20px;
+    background: #fff;
+}
