@@ -92,5 +92,17 @@ body {
 .navigation ul  li.active
 {
     transform: translateX(30px);
-    background: (#333);
+    background: var(--bg);
+}
+
+.navigation ul li::before
+{
+    content: '';
+    position: absolute;
+    top: -28px;
+    right: 22;
+    width: 20px;
+    height: 20px;
+    background: #f00;
+    bo
 }
