@@ -4,7 +4,7 @@ function insertRow() {
   const [name, color, weight] = process.argv.slice(2);
   db.run(
     `INSERT INTO user (firstname, lastname, username, email, password) VALUES (?,?,?,?,?)`,
-    ["Rayan", "Muhammed", "RM231", "rayan.muhammed@outlook.com", "twenty_fifteen"],
+    ["Rayan", "Muhammed", "RM231", "rayan.muhammed@outlook.com", "twenty_twenty"],
     function (error) {
       if (error) {
         console.error(error.message);
