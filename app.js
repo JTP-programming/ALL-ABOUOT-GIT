@@ -60,3 +60,18 @@ app.post("/api/login", (req, res, next) => {
         })
       });
 });
+
+app.post("/api/signup", (req, res, next) => {
+    var sql = `INSERT INTO user (firstname, lastname, username, email, password) VALUES ("${req.body.firstname}","${req.body.lastname}","${req.body.username}","${req.body.email}","${req.body.password}")`
+    var params = [req.params.id]
+    db.run(sql, params, (err, row) => {
+        if (err) { 
+          res.status(400).json({"error":err.message});
+          return;
+        }
+        res.json({
+            "message":"Sign-up Successful",
+            "data":row
+        })
+      });
+});
