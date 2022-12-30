@@ -45,6 +45,10 @@ input{
     border: none;
     border-radius: 30px;
 }
+.confirmpassword{
+    border: none;
+    border-radius: 30px;
+}
 
 .button
 {
@@ -75,4 +79,11 @@ h3{
 hr{
     width: 30px;
     margin-bottom: 40px;
+}
+
+.htag{
+    margin: 0;
+    font-size: 10px;
+    /*color: red;*/
+    font-family: Helvetica;
 }
