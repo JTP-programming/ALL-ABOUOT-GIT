@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="signup">
+        <h1>SIGN UP</h1>
+        <hr>
+        <form>
+        <div class="input-group">
+            <ion-icon class="icon" name="person"></ion-icon>
+            <input class="password" id="fn"placeholder="First name" required minlength="3"></input>
+        </div>
+        <div class="input-group">
+            <ion-icon class="icon" name="contact"></ion-icon>
+            <input class="password" id="ln"placeholder="Last name" required minlength="3"></input>
+        </div>
+        <div class="input-group">
+            <ion-icon class="icon" name="contacts"></ion-icon>
+            <input class="username" id="un"placeholder="Username" required minlength="3"></input>
+        </div>
+        <div class="input-group">
+            <ion-icon class="icon" name="unlock"></ion-icon>
+            <input class="password" type="password"id="pw"placeholder="Password" required minlength="8"></input>
+        </div>
+        <div class="input-group">
+            <ion-icon class="icon" name="lock"></ion-icon>
+            <input class="confirmpassword" type="password"id="cpw"placeholder="Confirm Password" required minlength="8"></input>
+        </div>
+        <p class="htag" id="htag"></p>
+        <div class="input-group">
+            <ion-icon class="icon" name="mail"></ion-icon>
+            <input class="password" id="em"placeholder="Email address" type="email" required></input>
+        </div>
+        <div class="input-group">
+            <ion-icon class="icon" name="log-in"></ion-icon>
+            <button class="button" type= "submit" onclick=signUp()><b>SIGN UP</b  ></button>
+        </div>
+        </form>
+        <a href="index.html">
+            <h3>Sign In</h3>
+        </a>
+    </div>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

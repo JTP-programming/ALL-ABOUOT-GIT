@@ -8,53 +8,29 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>ALL ABOUT GIT</h1>
-    <div class="navigation">
-        <div class="menuToggle"></div>
-        <ul>
-            <li class="list active">
-                <a href="#" style="--clr:#f44336;">
-                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-                    <span class="text">Home</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#" style="--clr:#ffa117;">
-                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                    <span class="text">About</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#" style="--clr:#0fc70f;">
-                    <span class="icon"><ion-icon name="chatbubble-outline"></ion-icon></span>
-                    <span class="text">Messages</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#" style="--clr:#3662f4;">
-                    <span class="icon"><ion-icon name="download-outline"></ion-icon></span>
-                    <span class="text">Install</span>
-                </a>
-            </li>
-        </ul>
+    <div class="login">
+        <h1>USER LOGIN</h1>
+        <hr>
+        <div class="input-group">
+            <ion-icon class="icon" name="contact"></ion-icon>
+            <input class="username" id="username" placeholder="Username"></input>
+        </div>
+        <div class="input-group">
+            <ion-icon class="icon"name="unlock"></ion-icon>
+            <input class="password" id="password" placeholder="Password"></input>
+        </div>
+        <div class="input-group">
+            <ion-icon class="icon"name="log-in"></ion-icon>
+            <button class="button" onclick="myFunction()"><b>LOGIN</b></button>
+        </div>
+        <h3>Forgot Password?</h3>
+        <h3>OR</h3>
+        <a href="signup.html">
+            <h3>CREATE AN ACCOUNT</h3>
+        </a>
+        
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script>
-        let menuToggle = document.querySelector('.menuToggle');
-        let navigation = document.querySelector('.navigation');
-        menuToggle.onclick = function(){
-            navigation.classList.toggle('active')
-        }
-
-        let list = document.querySelectorAll('.list')
-        function activeLink(){
-            list.forEach((item) =>
-            item.classList.remove('active'));
-            this.classList.add('active')
-        }
-        list.forEach((item) =>
-        item.addEventListener('click',activeLink))
-    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>
