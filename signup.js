@@ -6,6 +6,7 @@ function signUp() {
   var email = document.getElementById("em").value;
   var errormsg = "Password Not A Match!";
   var confirmpassword = document.getElementById("cpw").value;
+  var errormsg2 = "Field cannot be empty!";
   var data = {
     firstname: firstname,
     username: username,
@@ -15,6 +16,11 @@ function signUp() {
     confirmpassword: confirmpassword,
   };
   console.log(data);
+  /*if (username == "" || password == "" || firstname == "" || lastname == "" || email == "" || confirmpassword == ""){
+    console.log(errormsg2)
+    document.getElementById("htag").innerHTML = errormsg2;
+    return;
+  }*/
   if (password != confirmpassword) {
     document.getElementById("htag").innerHTML = errormsg;
     return;

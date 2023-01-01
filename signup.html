@@ -11,9 +11,10 @@
     <div class="signup">
         <h1>SIGN UP</h1>
         <hr>
+        <form>
         <div class="input-group">
             <ion-icon class="icon" name="person"></ion-icon>
-            <input class="password" id="fn"placeholder="First name"></input>
+            <input class="password" id="fn"placeholder="First name" required minlength = "1"></input>
         </div>
         <div class="input-group">
             <ion-icon class="icon" name="contact"></ion-icon>
@@ -34,12 +35,13 @@
         <p class="htag" id="htag"></p>
         <div class="input-group">
             <ion-icon class="icon" name="mail"></ion-icon>
-            <input class="password" id="em"placeholder="Email address"></input>
+            <input class="password" id="em"placeholder="Email address" type="email"></input>
         </div>
         <div class="input-group">
             <ion-icon class="icon" name="log-in"></ion-icon>
-            <button class="button" onclick=signUp()><b>SIGN UP</b  ></button>
+            <button class="button" type= "submit" onclick=signUp()><b>SIGN UP</b  ></button>
         </div>
+        </form>
         <a href="index.html">
             <h3>Sign In</h3>
         </a>
