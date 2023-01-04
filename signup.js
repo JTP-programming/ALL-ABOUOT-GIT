@@ -16,11 +16,11 @@ function signUp() {
     confirmpassword: confirmpassword,
   };
   console.log(data);
-  /*if (username == "" || password == "" || firstname == "" || lastname == "" || email == "" || confirmpassword == ""){
+  if (username == "" || password == "" || firstname == "" || lastname == "" || email == "" || confirmpassword == ""){
     console.log(errormsg2)
     document.getElementById("htag").innerHTML = errormsg2;
     return;
-  }*/
+  }
   if (password != confirmpassword) {
     document.getElementById("htag").innerHTML = errormsg;
     return;
