@@ -18,11 +18,11 @@ h2{
     width: 60px;
     border-radius: 140px;
 }
-.date
+
 .img_and_div{
     display: flex;
+    flex-direction: row;
 }
-
 p{
     font-size: 20px;
     font-family: Helvetica;
@@ -45,6 +45,7 @@ hr{
 }
 
 .right{
+    padding-left: 5%;
     width: 30%;
     border-left: 1px solid grey;
 }
