@@ -18,7 +18,9 @@ h2{
     width: 60px;
     border-radius: 140px;
 }
-
+.date{
+    color: gray;
+}
 .img_and_div{
     display: flex;
     flex-direction: row;
@@ -41,7 +43,6 @@ hr{
     padding-left: 10%;
     padding-right: 10%;
     height: 1500px;
-    border: 1px solid black;
 }
 
 .right{
