@@ -41,14 +41,14 @@ app.get("/api/user/:id", (req, res, next) => {
 });
 
 app.post("/api/login", (req, res, next) => {
-    var sql = `select * from user where username = "${req.body.username}"`
+    var sql = `select * from user where username = "${req.body.username}" and password = "${req.body.password}"`
     console.log(req.body, sql)
     var params = [req.params.id]
     db.get(sql, params, (err, row) => {
         console.log("From Database",row)
         if(row === undefined){
-            res.status(400).json({"error":"Incorrect username or password"});
-            return;
+          res.status(400).json({"error":"Incorrect username or password"});
+          return;
         }
         if (err) {
           res.status(400).json({"error":err.message});
