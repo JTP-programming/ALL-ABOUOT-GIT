@@ -69,6 +69,7 @@ app.post("/api/signup", (req, res, next) => {
           res.status(400).json({"error":err.message});
           return;
         }
+        console.log("Hello!")
         res.json({
             "message":"Sign-up Successful",
             "data":row

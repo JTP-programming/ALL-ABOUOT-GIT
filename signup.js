@@ -15,6 +15,7 @@ function signUp() {
     email: email,
     confirmpassword: confirmpassword,
   };
+  console.log("Working")
   console.log(data);
   if (username == "" || password == "" || firstname == "" || lastname == "" || email == "" || confirmpassword == ""){
     console.log(errormsg2)
@@ -25,7 +26,8 @@ function signUp() {
     document.getElementById("htag").innerHTML = errormsg;
     return;
   }
-  document.location = "landing.html"
+  console("Redirecting to landing page")
+  //document.location = "landing.html"  
   document.getElementById("htag").innerHTML = "";
   fetch("http://localhost:3000/api/signup", {
     headers: {
@@ -40,6 +42,7 @@ function signUp() {
       return response.json();
     })
     .then((data) => {
+      //document.location = "landing.html"
       console.log(data);
     });
     
