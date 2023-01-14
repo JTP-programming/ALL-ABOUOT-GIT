@@ -25,7 +25,7 @@ function signUp() {
     document.getElementById("htag").innerHTML = errormsg;
     return;
   }
-  document.location = "file:///C:/Users/shara/ALL-ABOUOT-GIT/landing.html"
+  document.location = "landing.html"
   document.getElementById("htag").innerHTML = "";
   fetch("http://localhost:3000/api/signup", {
     headers: {

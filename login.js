@@ -27,7 +27,7 @@ console.log(data);
   })
   .then(data=> {      
     console.log(data);
-    document.location = "file:///C:/Users/shara/ALL-ABOUOT-GIT/landing.html"
+    document.location = "landing.html"
   })
   .catch(response=> {
     console.log("Incorrect user name or password")
