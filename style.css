@@ -25,15 +25,20 @@
 a{
     text-decoration: none;
 }
+.input-group{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+input{
+    padding: 10px;
+    width: 200px;
+}
 .icon{
     padding: 5px;
 }
-input{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 220px;
-    height: 35px;
-}
+
+
 .username
 {
     border: none;
@@ -69,8 +74,8 @@ h3{
     font-size: 13px;
 }
 .icon{
-    display: flex;
-    flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
     margin-right: 10px;
     color: #fff;
     width: 35px;
