@@ -4,8 +4,8 @@ function signUp() {
   var firstname = document.getElementById("fn").value;
   var lastname = document.getElementById("ln").value;
   var email = document.getElementById("em").value;
-  var errormsg = "Password Not A Match!";
   var confirmpassword = document.getElementById("cpw").value;
+  var errormsg = "Password Not A Match!";
   var errormsg2 = "Field cannot be empty!";
   var data = {
     firstname: firstname,
