@@ -26,7 +26,7 @@ function signUp() {
     document.getElementById("htag").innerHTML = errormsg;
     return;
   }
-  console("Redirecting to landing page")
+  console.log("Redirecting to landing page")
   //document.location = "landing.html"  
   document.getElementById("htag").innerHTML = "";
   fetch("http://localhost:3000/api/signup", {
@@ -38,11 +38,14 @@ function signUp() {
     body: JSON.stringify(data),
   })
     .then((response) => {
-      /*console.log(response.json())*/
-      return response.json();
+      if (response.ok) {
+        console.log("HELLO");
+        return response.json();
+      }
+      return Promise.reject(response);
     })
     .then((data) => {
-      //document.location = "landing.html"
+      document.location = "landing.html"
       console.log(data);
     });
     
